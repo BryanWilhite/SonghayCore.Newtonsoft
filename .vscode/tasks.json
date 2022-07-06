@@ -1,0 +1,117 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "dotnet build [Solution]",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "${workspaceFolder}/SonghayCore.Newtonsoft.sln"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "dotnet build [Solution, Release]",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "${workspaceFolder}/SonghayCore.Newtonsoft.sln",
+                "--configuration",
+                "Release"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "dotnet build [SonghayCore.Newtonsoft]",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "${workspaceFolder}/SonghayCore.Newtonsoft/SonghayCore.Newtonsoft.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "dotnet build [SonghayCore.Newtonsoft, Release]",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "${workspaceFolder}/SonghayCore.Newtonsoft/SonghayCore.Newtonsoft.csproj",
+                "--configuration",
+                "Release"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "dotnet pack [SonghayCore.Newtonsoft, Debug]",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "pack",
+                "${workspaceFolder}/SonghayCore.Newtonsoft/SonghayCore.Newtonsoft.csproj",
+                "--configuration",
+                "Debug",
+                "-p:NuspecFile=${workspaceFolder}/SonghayCore.Newtonsoft/SonghayCore.Newtonsoft.nuspec",
+                "-p:NuspecBasePath=${workspaceFolder}/SonghayCore.Newtonsoft",
+                "--output",
+                "${workspaceFolder}/SonghayCore.Newtonsoft",
+                "--verbosity",
+                "normal"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "dotnet build [SonghayCore.Newtonsoft.Tests]",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "${workspaceFolder}/SonghayCore.Newtonsoft.Tests/SonghayCore.Newtonsoft.Tests.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "dotnet test [SonghayCore.Newtonsoft.Tests]",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "test",
+                "${workspaceFolder}/SonghayCore.Newtonsoft.Tests/SonghayCore.Newtonsoft.Tests.csproj",
+                "--logger:trx",
+                "--results-directory:${workspaceFolder}/TestResults",
+                "--verbosity:normal",
+                "/p:CollectCoverage=true"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "dotnet build [SonghayCore.Newtonsoft.Tests, Release]",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "${workspaceFolder}/SonghayCore.Newtonsoft.Tests/SonghayCore.Newtonsoft.Tests.csproj",
+                "--configuration",
+                "Release"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "dotnet test [SonghayCore.Newtonsoft.Tests, filtered by selected text]",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "test",
+                "${workspaceFolder}/SonghayCore.Newtonsoft.Tests/SonghayCore.Newtonsoft.Tests.csproj",
+                "--filter:${selectedText}",
+                "--logger:trx",
+                "--results-directory:${workspaceFolder}/TestResults",
+                "--verbosity:normal"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonghayCore.Newtonsoft", "SonghayCore.Newtonsoft\SonghayCore.Newtonsoft.csproj", "{770262F9-8BBA-40FC-9F7E-06C5C4E73D63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonghayCore.Newtonsoft.Tests", "SonghayCore.Newtonsoft.Tests\SonghayCore.Newtonsoft.Tests.csproj", "{6BEABD39-9BA2-40C9-AE17-824CA5A54487}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{770262F9-8BBA-40FC-9F7E-06C5C4E73D63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{770262F9-8BBA-40FC-9F7E-06C5C4E73D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{770262F9-8BBA-40FC-9F7E-06C5C4E73D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{770262F9-8BBA-40FC-9F7E-06C5C4E73D63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BEABD39-9BA2-40C9-AE17-824CA5A54487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BEABD39-9BA2-40C9-AE17-824CA5A54487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BEABD39-9BA2-40C9-AE17-824CA5A54487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BEABD39-9BA2-40C9-AE17-824CA5A54487}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
